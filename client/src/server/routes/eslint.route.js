@@ -9,6 +9,7 @@ router.post('/lint-code', async (req, res) => {
     try {
       const code = req.body.code;
       const results = await eslint.lintText(code);
+      console.log("ESLint results:", results);
       const formatter = await eslint.loadFormatter('json');
       const resultJson = formatter.format(results);
 

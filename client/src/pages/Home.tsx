@@ -13,7 +13,8 @@ import SourceIcon from "@mui/icons-material/Source";
 import FormatAlignLeftIcon from "@mui/icons-material/FormatAlignLeft";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import { revealVariants, textRevealVariant } from "../assets/motion.js";
-import EveScene from "components/3d/Eve";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 import CheckIcon from "@mui/icons-material/Check";
 import { Loading } from "components";
 

@@ -8,6 +8,7 @@ import postRouter from './routes/post.routes.js'
 import problemRouter from './routes/problem.route.js';
 import eslintRouter from './routes/eslint.route.js';
 import chatRouter from './routes/chat.route.js';
+import prismaRouter from './routes/prisma.route.js';
 import bodyParser from "body-parser";
 
 dotenv.config()
@@ -27,6 +28,7 @@ app.use('/api/v1/posts', postRouter)
 app.use('/api/v1/problems', problemRouter)
 app.use('/api/v1/eslint', eslintRouter)
 app.use('/api/v1/chat', chatRouter)
+app.use('/api/v1/prisma', prismaRouter)
 
 const startServer = async () => {
     try {
